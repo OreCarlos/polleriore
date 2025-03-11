@@ -1,0 +1,219 @@
+/* navegador*/
+.preterminado_nav {
+    padding: 10px 25px;
+    background-color: var(--color_rojo);
+    color: var(--color_blanco);
+    border-radius: 5px;
+    font-weight: var(--letra_negrita);
+}
+
+.nav_content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: var(--fondo_blanco);
+
+}
+
+.nav-logo {
+    width: 30%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+    padding: var(--margin-ul);
+}
+
+.logo_img {
+    width: auto;
+    height: auto;
+}
+
+.nav-enlaces {
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    display: flex;
+}
+
+ul {
+    display: flex;
+    margin: var(--margin-ul);
+}
+
+li {
+    margin: var(--margin-ul);
+    margin-left: var(--padding_footer);
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color_negro);
+    font-family: var(--tipo_letra);
+}
+
+/* ----------- MENÚ HAMBURGUESA ----------- */
+.menu-btn {
+    display: none;
+    font-size: var(--titulo_Grandaso);
+    cursor: pointer;
+    position: absolute;
+    right: var(--margines40px);
+    top: var(--margines40px);
+    color: var(--color_rojo);
+    font-weight: bold;
+    z-index: 1001;
+}
+
+.menu-btn i {
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+#menu-toggle {
+    display: none;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .preterminado_nav {
+        padding: 10px 40%;
+    }
+    li{
+        text-align: justify;
+    }
+    .nav-enlaces {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: auto;
+        background-color: var(--color_blanco);
+        flex-direction: column;
+
+        text-align: justify;
+        transition: left 0.4s ease-in-out;
+    }
+
+    .nav-enlaces ul {
+        flex-direction: column;
+        text-align: justify;
+        gap: var(--margin-ul);
+    }
+
+    #menu-toggle:checked+.menu-btn+.nav-enlaces {
+        left: 0;
+    }
+
+    #menu-toggle:checked+.menu-btn .fa-bars {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked+.menu-btn .fa-xmark {
+        opacity: 1;
+    }
+
+    .menu-btn .fa-bars {
+        opacity: 1;
+    }
+
+    .menu-btn .fa-xmark {
+        opacity: 0;
+        position: absolute;
+    }
+
+    /* seccion footer */
+
+    .footer_content {
+        width: 100%;
+        height: auto;
+        background-color: #171E27;
+        color: var(--color_blanco);
+        padding: var(--padding_footer);
+        flex-direction: column;
+
+    }
+
+    .footer_sec {
+        width: 90%;
+        text-align: center;
+        height: auto;
+        margin: var(--margin-ul);
+        font-size: var(--tamañoLetra_footer);
+        justify-content: center;
+
+    }
+
+    .footer_logo {
+        font-size: var(--titulo_Grande);
+        font-family: var(--letra_TituloGrande);
+    }
+
+    .footer_contenido {
+        font-family: var(--tipo_letra);
+        font-size: var(--tamañoLetra_footer);
+    }
+
+    aside {
+        width: 100%;
+        padding: var(--padding-nav);
+        font-family: var(--marca_autor_footer);
+    }
+
+    .logo_img_footer {
+        width: 50%;
+        text-align: left;
+    }
+}
+
+
+/* footer */
+
+.footer_content {
+    width: 100%;
+    height: auto;
+    background-color: #171E27;
+    color: var(--color_blanco);
+    padding: var(--padding_footer);
+    display: flex;
+    justify-content: center;
+}
+
+.footer_sec {
+    width: 90%;
+    height: auto;
+    margin: var(--margin-ul);
+    font-size: var(--tamañoLetra_footer);
+    justify-content: center;
+}
+
+.footer_logo {
+    font-size: var(--titulo_Grande);
+    font-family: var(--letra_TituloGrande);
+}
+
+.footer_contenido {
+    font-family: var(--tipo_letra);
+    font-size: var(--tamañoLetra_footer);
+}
+
+aside {
+    width: 100%;
+    padding: var(--padding-nav);
+    font-family: var(--marca_autor_footer);
+    grid-column: 1 / -1;
+}
+
+.logo_img_footer {
+    width: 3%;
+    text-align: left;
+}
+
+p {
+    text-align: center;
+}

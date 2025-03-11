@@ -1,0 +1,132 @@
+section {
+    width: 100%;
+    height: auto;
+    display: grid;
+     
+    grid-template-columns: repeat(2, 1fr); 
+    background-color: var(--fondo_blanco);
+    
+}
+h1{
+    margin-left: var(--margenes);
+    margin-top: var(--margenes);
+    font-size: var(--titulo_Grandaso);
+    font-family: var(--letra_TituloGrande);
+    border-bottom: 8px solid var(--color_rojo);
+    width: 30%;
+    grid-column: 1 / -1;
+    padding: 0.5rem;
+}
+
+/* contenedor promociones */
+
+.cotenedor_LocalesINFO {
+    width: 90%;
+    height: auto;
+    margin: var(--margin-left);
+    text-align: justify;
+    display: grid;  
+}
+
+.padre_imgMENU {
+    width: 100%;
+    height: auto;
+    padding: var(--padding-nav);
+}
+
+.img_menuPROMOCIONES {
+    width: 100%;
+    height: auto;
+}
+
+.contenedor_textopMENU {
+    width: 100%;
+    height: auto;
+}
+
+span{
+    width: 100%;
+    flex-direction: column;
+    display: grid;
+    text-align: justify;
+    align-items: center;
+    font-size: var(--titulo_Grande);
+    font-family: var(--tipo_letra);
+}
+.titulo_menuPromo{
+    margin: var(--margin-ul);
+    font-family: var(--letra_TituloGrande);
+    font-weight: var(--letra_negrita);
+}
+.informacion_menupromo{
+    font-size: var(--titulo_Grande);
+    font-family: var(--tipo_letra);
+}
+.color_promocion {
+    color: var(--color_rojo);
+    font-weight: var(--letra_negrita);
+}
+button {
+    width: 30%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    justify-content: center;
+    background-color: var(--color_rojo);
+    color: var(--color_blanco);
+    font-weight: var(--letra_negrita);
+    border: 2px var(--color_rojo) solid;
+    margin: var(--margin-ul);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cotenedor_LocalesINFO {
+        width: 90%;
+        height: auto;
+        margin: var(--margin-ul);
+    }
+
+    .padre_imgMENU {
+        width: 100%;
+        height: auto;
+        text-align: justify;
+    }
+
+    .contenedor_textopMENU {
+        width: 100%;
+        height: auto;
+    }
+
+    span {
+        width: 100%;
+        flex-direction: column;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: var(--texto_mediogrande);
+        font-family: var(--tipo_letra);
+    }
+    
+
+    .informacion_menupromo {
+        font-size: var(--tamañoLetra_footer);
+        text-align: justify;
+        font-family: var(--tipo_letra);
+    }
+
+    h1 {
+        width: 80%;
+    }
+
+    iframe{
+        width: 90%;
+    }
+
+}

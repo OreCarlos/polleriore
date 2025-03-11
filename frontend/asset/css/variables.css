@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--fondo_blanco);
+}
+:root{
+    --margin-ul: 1rem; /* margen de los enlaces */
+    --margin-left: 3rem; /* margin a la izquierda enlaces*/
+    --padding-nav: 0.5rem; /* padding del logo haci en el navegador */
+    --padding_footer: 1rem; /* padding 1rem en el footer */;
+    --margenes: 3rem;
+    --bordes: 5px;
+    --bordes_grandes: 10px;
+    --margines40px: 40px;    
+    --margin_02: 2rem; 
+
+   
+
+    /* tipo de fuentes */
+
+    --tipo_letra: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* tipo de letra navegador */
+    --letra_TituloGrande:Verdana, Geneva, Tahoma, sans-serif;
+    --letra_negrita:bolder;
+    --marca_autor_footer:'Courier New', Courier, monospace;
+
+    /* tamaño de letra */
+
+    --tamañoLetra_footer:1rem; /* tamaño de letra del footer */
+    --texto_mediogrande: 1.2rem;
+    --titulo_Grande: 1.4rem;
+    --titulo_Grandaso: 1.8rem;
+
+    /*colores */
+    --color_blanco: white;
+    --fondo_blanco:whitesmoke;
+    --fondo_footer:#000000;
+    --color_negro: black;
+    --color_rojo: #A61321;
+    --color_vino: #570301;
+    --color_oscuro_trasparente: #262626;
+}
