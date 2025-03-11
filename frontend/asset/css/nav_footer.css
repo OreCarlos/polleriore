@@ -95,9 +95,9 @@ a {
         height: auto;
         background-color: var(--color_blanco);
         flex-direction: column;
-
         text-align: justify;
         transition: left 0.4s ease-in-out;
+        z-index: 1000;
     }
 
     .nav-enlaces ul {
